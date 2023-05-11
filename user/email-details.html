@@ -13,7 +13,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>نوشتن ایمیل</title>
+  <title>جزئیات ایمیل</title>
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto" rel="stylesheet">
@@ -22,12 +22,6 @@
 
   <!-- PLUGINS CSS STYLE -->
   <link href="plugins/nprogress/nprogress.css" rel="stylesheet" />
-  
-  
-  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
-  
-  
-  
   
   <!-- MONO CSS -->
   <link id="main-css-href" rel="stylesheet" href="css/style.css" />
@@ -63,9 +57,7 @@
     ===================================== -->
     <div class="wrapper">
       
-      
-       
-        <!-- ====================================
+              <!-- ====================================
           ——— LEFT SIDEBAR WITH OUT FOOTER
         ===================================== -->
         <aside class="left-sidebar sidebar-dark" id="left-sidebar">
@@ -394,9 +386,9 @@
             </div>
           </div>
         </aside>
-      
 
-       <!-- ====================================
+
+      <!-- ====================================
       ——— PAGE WRAPPER
       ===================================== -->
       <div class="page-wrapper">
@@ -409,7 +401,7 @@
                 <span class="sr-only">Toggle navigation</span>
               </button>
 
-              <span class="page-title"> نوشتن ایمیل</span>
+              <span class="page-title"> جزئیات ایمیل</span>
 
               <div class="navbar-right ">
 
@@ -731,7 +723,7 @@
         ——— CONTENT WRAPPER
         ===================================== -->
         <div class="content-wrapper">
-          <div class="content">  <!-- ====================================
+          <div class="content">	<!-- ====================================
 	——— EMAIL WRAPPER
 	===================================== -->
   <div class="email-wrapper rounded border bg-white">
@@ -756,7 +748,7 @@
             </li>
             <li class="d-block mb-4">
               <a href="#">
-                <i class="mdi mdi-open-in-new mr-2"></i>نامه ارسال شده</a>
+                <i class="mdi mdi-open-in-new mr-2"></i> نامه ارسال شده</a>
             </li>
             <li class="d-block mb-4">
               <a href="#">
@@ -785,56 +777,120 @@
         </div>
       </div>
       <div class="col-lg-8 col-xl-9 col-xxl-10">
-        <div class="email-right-column  email-body p-4 p-xl-5">
-          <div class="email-body-head mb-5 ">
-            <h4 class="text-dark">نامه جدید</h4>
-          </div>
-          <form class="email-compose">
-            <div class="form-group">
-              <input type="email" class="form-control" id="exampleEmail" placeholder="به: ">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="exampleSubject" placeholder="موضوع ">
-            </div>
-            <div id="standalone">
-              <div id="toolbar">
-                <span class="ql-formats">
-                  <select class="ql-font"></select>
-                  <select class="ql-size"></select>
-                </span>
-                <span class="ql-formats">
-                  <button class="ql-bold"></button>
-                  <button class="ql-italic"></button>
-                  <button class="ql-underline"></button>
-                </span>
-                <span class="ql-formats">
-                  <select class="ql-color"></select>
-                </span>
-                <span class="ql-formats">
-                  <button class="ql-blockquote"></button>
-                </span>
-                <span class="ql-formats">
-                  <button class="ql-list" value="ordered"></button>
-                  <button class="ql-list" value="bullet"></button>
-                  <button class="ql-indent" value="-1"></button>
-                  <button class="ql-indent" value="+1"></button>
-                </span>
-                <span class="ql-formats">
-                  <button class="ql-direction" value="rtl"></button>
-                  <select class="ql-align"></select>
-                </span>
+        <div class="email-right-column p-4 p-xl-5">
+          <!-- Email Right Header -->
+          <div class="email-right-header mb-5">
+            <!-- head left option -->
+            <div class="head-left-options">
+              <button type="button" class="btn btn-icon btn-outline btn-rounded-circle">
+                <i class="mdi mdi-refresh"></i>
+              </button>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle border rounded-pill" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">بیشتر
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start"
+                  style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                  <a class="dropdown-item" href="#">حذف</a>
+                  <a class="dropdown-item" href="#"> افزودن به مورد علاقه ها</a>
+                  <a class="dropdown-item" href="#">برچسب زدن</a>
+                </div>
               </div>
             </div>
-            <div id="editor"></div>
-            <div class="email-attachment mt-4 mb-3">
-              <i class="fa fa-paperclip fa-1x"></i>
-              <span class="text-dark d-inline-block font-weight-medium pl-2">پیوست</span>
+            <!-- head right option -->
+            <div class="head-right-options">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn border btn-pill">
+                  <i class="mdi mdi-chevron-left"></i>
+                </button>
+                <button type="button" class="btn border btn-pill">
+                  <i class="mdi mdi-chevron-right"></i>
+                </button>
+              </div>
             </div>
-          </form>
-          <div class="border rounded mb-5">
-            <form action="./" class="dropzone"></form>
           </div>
-          <button class="btn btn-primary btn-pill mb-5" type="submit"> ارسال</button>
+          <div class="border rounded email-details">
+
+            <div class="email-details-header">
+              <h4 class="text-dark">Introducing our new tool</h4>
+            </div>
+
+            <div class="email-details-content">
+              <div class="email-details-content-header">
+
+                <div class="media media-sm mb-lg-0">
+                  <div class="media-sm-wrapper">
+                    <img src="images/user/user-sm-03.jpg" alt="User Image">
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 text-dark font-weight-bold">Larissa Gebhardt</h6>
+                    <span>
+                      From:
+                      <i class="mdi mdi-chevron-left"></i>@selena.oi
+                      <i class="mdi mdi-chevron-right"></i>to me
+                    </span>
+                  </div>
+                </div>
+
+                <div class="email-details-content-header-right">
+                  <time class="p-1 p-xl-2">Mar 18</time>
+
+                  <a class="text-color p-1 p-xl-2" href="#">
+                    <i class="mdi mdi-star-outline"></i>
+                  </a>
+
+                  <a class="text-color p-1 p-xl-2" href="#">
+                    <i class="mdi mdi-attachment"></i>
+                  </a>
+
+                  <div class="btn-group p-1 p-xl-2" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-pill mdi mdi-reply"></button>
+                    <button type="button" class="btn btn-pill mdi mdi-printer"></button>
+                    <button type="button" class="btn btn-pill mdi mdi-trash-can-outline"></button>
+                  </div>
+
+                  <div class="dropdown">
+
+                
+
+                   
+                  </div>
+
+
+                </div>
+              </div>
+              <p class="pb-4">Hi Selena</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <br>
+              <p>
+                Perspiciatis unde omnis iste natus error sit voluptatem accusantium oloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+              </p>
+              <p class="pt-4">
+                <i class="fa fa-paperclip ml-2"></i>
+                <span class="text-dark">4 Attachments</span>
+              </p>
+              <div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+                <img src="images/products/pa1.jpg" alt="Product">
+              </div>
+              <div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+                <img src="images/products/pa2.jpg" alt="Product">
+              </div>
+              <div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+                <img src="images/products/pa3.jpg" alt="Product">
+              </div>
+              <div class="email-img d-inline-block rounded overflow-hidden mt-3 mt-lg-4 mr-2 mr-md-3 mr-lg-4">
+                <img src="images/products/pa4.jpg" alt="Product">
+              </div>
+
+              <div class="email-content-footer mt-5 pb-5 px-4 pt-4 border rounded">
+                <p>اینجا کلیک کنید تا
+                  <a class="text-blue btn btn-primary btn-pill ml-2" href="#">پاسخ</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -847,7 +903,7 @@
           <footer class="footer mt-auto">
             <div class="copyright bg-white">
               <p>
-                &copy; <span id="copy-year"></span> Copyright  <a class="text-primary" href="http://www.iamabdus.com/" target="_blank" >mdm</a>.
+                &copy; <span id="copy-year"></span> Copyright <a class="text-primary" href="http://www.iamabdus.com/" target="_blank" >mdm</a>.
               </p>
             </div>
             <script>
@@ -972,14 +1028,6 @@
                     <script src="plugins/simplebar/simplebar.min.js"></script>
                     <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
 
-                    
-                    
-                    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-                    
-                    
-                    
-                    <script src="plugins/dropzone/dropzone.js"></script>
-                    
                     
                     <script src="js/mono.js"></script>
                     <script src="js/chart.js"></script>
