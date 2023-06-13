@@ -1,8 +1,7 @@
-# CRM-ADMIN-USER
-درباره پروژه CRM
-تمام فایل های پروژه در این ریپوزیتوری قرار دارد:
-فایل دیتابیس یا پایگاه داده با پسوند.sql
-فایل زیپ شده از فونت وزیر که در این قالب استفاده شده(برای کسانی که فونت وزیر را نصب ندارند کافی است با استفاده از این فایل آنرا نصب کنند و قالب ما را با آن فونت ببینند)
-فلیم تست کد های PHP
-تمام فایل های قسمت ادمین پروژه
-فایل های قسمت کاربر در همین ریپوزیتوری ولی در پوشه user قرار دارد
+About the CRM project
+All project files are located in this repository:
+1- Database file with sql extension.
+2- The zipped file of the Wazir font used in this template (for those who do not have the Wazir font installed, it is enough to install it using this file and see our template with that font)
+3-PHP code test video.
+4- All the files of the admin part of the project are located in this repository.
+5- The files of the user part are located in the same repository but in the user folder.
